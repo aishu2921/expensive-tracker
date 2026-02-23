@@ -12,7 +12,7 @@ app.use(cors());
 
 // ================= CONNECT TO MONGODB =================
 
-mongoose.connect("mongodb+srv://aiswarya:aishu2005cluster0.dw7rdin.mongodb.net/expenseDB?appName=Cluster0")
+mongoose.connect("mongodb+srv://aiswarya:aishu2005@cluster0.dw7rdin.mongodb.net/expenseDB?appName=Cluster0")
 
 //mongoose.connect("mongodb://localhost:27017/expenseDB")
 .then(() => {
