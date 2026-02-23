@@ -11,7 +11,10 @@ app.use(express.json());
 app.use(cors());
 
 // ================= CONNECT TO MONGODB =================
-mongoose.connect("mongodb://localhost:27017/expenseDB")
+
+mongoose.connect("mongodb+srv://aiswarya:aishu2005cluster0.dw7rdin.mongodb.net/expenseDB?appName=Cluster0")
+
+//mongoose.connect("mongodb://localhost:27017/expenseDB")
 .then(() => {
     console.log("✅ MongoDB Connected");
 })
@@ -98,5 +101,5 @@ app.delete("/expenses/:id", async (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`✅ Server running on http://localhost:${PORT}`);
+    console.log(`✅ Server running on http://localhost:3000`);
 });

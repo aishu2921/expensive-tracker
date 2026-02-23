@@ -6,9 +6,9 @@ const addBtn = document.getElementById("addBtn");
 const expenseList = document.getElementById("expenseList");
 const totalAmount = document.getElementById("totalAmount");
 
-//const API_URL = "http://localhost:5000/api/expenses";
 
-const API_URL = "http://localhost:3000/expenses";
+
+const API_URL = "https://expensive-tracker-backend-uuaz.onrender.com/expenses";
 // Load expenses when page loads
 window.addEventListener("DOMContentLoaded", function () {
 
